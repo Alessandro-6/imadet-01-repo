@@ -20,13 +20,13 @@ export default function Footer() {
             </IconContext.Provider>
           </div>
 
-          <a href="#" className="email">
+          <a href className="email">
             Imadet007@gmail.com
           </a>
         </Modal>
       )}
       <footer className="footer">
-        <a href="#" className="footer__logo">
+        <a href className="footer__logo">
           <img src="images/logo.svg" alt="Logo" className="logo" />
           <img src="images/brand-dark.svg" alt="brand" className="brand" />
         </a>
@@ -34,7 +34,7 @@ export default function Footer() {
           &copy; 2023-2030 Todos os direitos reservados
         </span>
         <a
-          href="#"
+          href
           className="contacts"
           onClick={(e) => {
             e.preventDefault();

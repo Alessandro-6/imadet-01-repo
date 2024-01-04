@@ -247,8 +247,11 @@ body {
 
 .more:active,
 .more:link,
-.more:visited {
+.more:visited,
+.more {
   text-decoration: none;
+  border: none;
+  background-color: transparent;
   font-size: 2rem;
   padding-bottom: 0.4rem;
   border-bottom: 1px solid #14213d;

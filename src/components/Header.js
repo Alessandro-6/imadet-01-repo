@@ -56,24 +56,24 @@ function Dropdown() {
   return (
     <div className="dropdown">
       <div className="select" onClick={() => setIsOpen(!isOpen)}>
-        <a href="#" className="navbar__nav--link selected">
+        <a href className="navbar__nav--link selected">
           Categorias <span className="caret"></span>
         </a>
       </div>
       {isOpen && (
         <ul className="dropdown__menu">
           <li className="dropdown__menu--item">
-            <a href="#" className="dropdown__menu--link">
+            <a href className="dropdown__menu--link">
               Ferramentas{" "}
             </a>
           </li>
           <li className="dropdown__menu--item">
-            <a href="#" className="dropdown__menu--link">
+            <a href className="dropdown__menu--link">
               Equipamentos{" "}
             </a>
           </li>
           <li className="dropdown__menu--item">
-            <a href="#" className="dropdown__menu--link">
+            <a href className="dropdown__menu--link">
               Máquinas{" "}
             </a>
           </li>
