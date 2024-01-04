@@ -1,0 +1,26 @@
+.section-about {
+  padding: 10rem 3rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #eee;
+
+  @include respond(mob) {
+    padding: 10rem 0;
+  }
+}
+
+.about:not(:last-child) {
+  margin-right: 1.5rem;
+}
+
+.section-products {
+  padding: 10rem;
+  @include respond(mob) {
+    padding: 10rem 0;
+  }
+}
+
+.section-newsletter {
+  height: 100vh;
+  padding: 15rem 0 20rem 0;
+}

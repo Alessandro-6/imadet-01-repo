@@ -1,0 +1,12 @@
+div.header {
+  height: 65vh;
+  background-image: linear-gradient(to right, rgba(#000, 0.4), rgba(#000, 0.4)),
+    url(../../public/images/image-1.jpg);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10rem;
+}

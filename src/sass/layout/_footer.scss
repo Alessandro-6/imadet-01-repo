@@ -1,0 +1,31 @@
+.footer {
+  background-color: $color-gray;
+  overflow-x: hidden;
+  padding: 12rem 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+
+  @include respond(mob) {
+    padding: 8rem 2rem;
+    flex-direction: column;
+  }
+  &__logo {
+    width: 8rem;
+    display: flex;
+    margin-right: 20rem;
+
+    @include respond(mob) {
+      align-self: center;
+      transform: translateX(-100%);
+      margin: 0;
+    }
+    .brand {
+      width: 20rem;
+      margin-left: -1.75rem;
+    }
+    .logo {
+      width: 100%;
+    }
+  }
+}

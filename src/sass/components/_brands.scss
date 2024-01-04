@@ -1,0 +1,19 @@
+.brands {
+  width: 60%;
+  margin: 0 auto;
+  height: 2rem;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+
+  .brand {
+    width: 4rem;
+    height: 4rem;
+    color: $color-secondary;
+    transition: all 0.2s;
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}

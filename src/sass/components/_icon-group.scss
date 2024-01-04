@@ -1,0 +1,24 @@
+.icon-group {
+  width: 82%;
+  display: flex;
+  justify-content: space-between;
+
+  &__link {
+    color: $color-white;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: capitalize;
+    display: flex;
+    align-items: center;
+    transition: all 0.2s;
+    cursor: pointer;
+
+    & span {
+      margin-left: 0.6rem;
+    }
+
+    &:hover {
+      color: $color-primary;
+    }
+  }
+}

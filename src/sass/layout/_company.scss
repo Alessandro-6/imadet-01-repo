@@ -1,0 +1,43 @@
+.company {
+  min-height: 100vh;
+}
+
+.about-company {
+  padding: 6rem 10rem;
+  & .heading-2 {
+    color: $color-primary;
+    font-size: 3.7rem;
+    font-weight: 700;
+  }
+  & .paragraph {
+    color: $color-secondary;
+    font-size: 1.6rem;
+    column-count: 2;
+    column-gap: 4rem;
+  }
+}
+
+.content {
+  display: flex;
+  gap: 4rem;
+}
+
+.overview {
+  padding: 0 10rem;
+  padding-bottom: 6rem;
+  & .paragraph {
+    color: $color-secondary;
+    font-size: 1.6rem;
+    column-count: 2;
+    column-gap: 4rem;
+  }
+  & .heading-2 {
+    color: $color-primary;
+    font-size: 3.7rem;
+    font-weight: 700;
+  }
+}
+
+.content-group {
+  padding: 2rem 0;
+}

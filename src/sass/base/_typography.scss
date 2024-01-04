@@ -1,0 +1,66 @@
+body {
+  font-family: "Lato", sans-serif;
+  font-size: 1.8rem;
+  line-height: 140%;
+  font-weight: 500;
+}
+
+.email {
+  color: $color-secondary;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 3rem;
+  transition: all 0.2s;
+  &:hover {
+    color: $color-primary;
+  }
+}
+
+.close {
+  align-self: center;
+}
+
+.heading-1 {
+  font-size: 6rem;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.heading-2 {
+  font-size: 4rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: $color-secondary;
+}
+
+.paragraph {
+  font-size: 1.6rem;
+}
+
+.copyright {
+  color: $color-secondary;
+
+  @include respond(mob) {
+    margin-bottom: 6rem;
+  }
+}
+
+.logo-imadet {
+  width: 40rem;
+  margin: -7rem 0;
+}
+
+.products-header {
+  text-align: center;
+  & > .paragraph {
+    font-size: 3rem;
+    color: $color-primary;
+  }
+}
+
+.products-description {
+  color: $color-primary;
+  font-size: 1.5rem;
+  transition: all 0.2s;
+  font-weight: 700;
+}

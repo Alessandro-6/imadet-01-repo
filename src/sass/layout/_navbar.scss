@@ -1,0 +1,92 @@
+.navbar {
+  display: flex;
+  align-items: center;
+  background: $color-secondary;
+  height: 8rem;
+  position: relative;
+  z-index: 1;
+
+  @include respond(mob) {
+    flex-direction: column;
+    height: auto;
+  }
+  &__logo {
+    width: 8rem;
+    margin-right: auto;
+    display: flex;
+
+    @include respond(mob) {
+      transform: translateX(-100%);
+      margin-right: 0;
+      margin-top: -3rem;
+    }
+
+    .brand {
+      width: 20rem;
+      margin-left: -1.75rem;
+    }
+    .logo {
+      width: 100%;
+    }
+  }
+  &__nav {
+    display: flex;
+    align-items: center;
+    height: 100%;
+    & > *:not(:last-child) {
+      margin-right: 3rem;
+    }
+
+    @include respond(mob) {
+      flex-wrap: wrap;
+      justify-content: center;
+      padding-bottom: 2rem;
+      padding-left: 1rem;
+    }
+    &:last-child {
+      margin-right: 8rem;
+
+      @include respond(mob) {
+        margin: 0;
+      }
+    }
+
+    &--item {
+      list-style: none;
+    }
+    &--link {
+      text-decoration: none;
+      color: $color-white;
+      text-transform: uppercase;
+      font-size: 1.6rem;
+      transition: all 0.2s;
+      &:hover {
+        color: $color-primary;
+      }
+    }
+
+    & .active {
+      position: relative;
+      color: $color-secondary;
+
+      &::before {
+        content: "";
+        display: block;
+        height: 100%;
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        background-color: $color-primary;
+        z-index: -1;
+        padding: 1rem 1.5rem;
+        border-radius: 0.8rem;
+      }
+
+      &:hover {
+        color: $color-white;
+      }
+    }
+  }
+}

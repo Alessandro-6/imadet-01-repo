@@ -1,0 +1,13 @@
+.contacts {
+  font-weight: 700;
+  color: $color-secondary;
+  text-decoration: none;
+  background-color: $color-white;
+  padding: 1.5rem 3rem;
+  display: block;
+  transition: all 0.2s;
+
+  &:hover {
+    box-shadow: 0 2rem 4rem rgba($color-secondary, 0.4);
+  }
+}
