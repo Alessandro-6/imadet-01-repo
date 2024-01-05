@@ -22,45 +22,61 @@ export default function Newsletter() {
           }}
         >
           <div className="newsletter__input-group">
-            <label className="newsletter__label">Nome</label>
+            <label className="newsletter__label" htmlFor="name">
+              Nome
+            </label>
             <input
+              id="name"
               className={`newsletter__input ${
                 inputValue && !valid ? "error" : ""
               }`}
               type="text"
               name="name"
+              autoComplete="given-name"
               placeholder="exemplo"
               onChange={(e) => setInputValue(e.target.value)}
             />
           </div>
 
           <div className="newsletter__input-group">
-            <label className="newsletter__label">E-mail</label>
+            <label className="newsletter__label" htmlFor="email">
+              E-mail
+            </label>
             <input
+              id="email"
               className={`newsletter__input ${
                 inputValue && !valid ? "error" : ""
               }`}
               value={inputValue}
               type="email"
               name="e-mail"
+              autoComplete="email"
               placeholder="exemplo123@gmail.com"
               onChange={(e) => setInputValue(e.target.value)}
             />
           </div>
           <div className="newsletter__input-group">
-            <label className="newsletter__label">Assunto</label>
+            <label className="newsletter__label" htmlFor="subject">
+              Assunto
+            </label>
             <input
+              id="subject"
               className={`newsletter__input ${
                 inputValue && !valid ? "error" : ""
               }`}
               type="text"
               name="subject"
+              autoComplete="off"
               placeholder="opcional"
             />
           </div>
           <div className="newsletter__input-group">
-            <label className="newsletter__label">Mensagem</label>
+            <label className="newsletter__label" htmlFor="message">
+              Mensagem
+            </label>
             <textarea
+              id="message"
+              autoComplete="off"
               className="newsletter__input"
               placeholder="eu gostaria de perguntar sobre"
             ></textarea>
