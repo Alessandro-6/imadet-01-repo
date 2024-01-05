@@ -52,12 +52,11 @@ body {
 
 .products-header {
   text-align: center;
-  & > .paragraph {
-    font-size: 3rem;
-    color: $color-primary;
-  }
 }
-
+.p-h2 {
+  font-size: 3rem;
+  color: $color-primary;
+}
 .products-description {
   color: $color-primary;
   font-size: 1.5rem;

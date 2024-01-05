@@ -65,7 +65,7 @@ export default function Products() {
     <section className="section-products">
       <header className="products-header mb-xl">
         <h2 className="heading-2 mb-sm">Nossos Produtos</h2>
-        <p className="paragraph">A solução para os problemas da sua obra</p>
+        <p className="p-h2">A solução para os problemas da sua obra</p>
       </header>
       <Cards />
     </section>

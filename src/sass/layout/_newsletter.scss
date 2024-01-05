@@ -1,22 +1,43 @@
 .newsletter {
-  text-align: center;
+  display: grid;
+  row-gap: 3rem;
+  grid-row: 2;
+  grid-column: 6 / span 4;
+
+  &__label {
+    font-weight: 700;
+    color: $color-secondary;
+    font-size: 1.7rem;
+  }
+
   &__input {
     border-radius: 0.6rem;
-    border: 1px solid $color-secondary;
+    border: 2px solid $color-dark-gray;
     outline: 1px solid transparent;
     padding: 1.4rem 1rem;
-    width: 40%;
+    width: 100%;
     margin-right: 1rem;
     font-size: 1.8rem;
     transition: all 0.2s;
+    font-family: inherit;
     &:focus {
       outline: 1px solid $color-secondary;
     }
+  }
+
+  &__input-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
   }
 
   .error {
     border: 1px solid #f00;
     outline: transparent;
     background: rgb(250, 245, 245);
+  }
+
+  & .btn {
+    width: 23rem;
   }
 }
