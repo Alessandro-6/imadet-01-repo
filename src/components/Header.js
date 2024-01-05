@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { NavLink } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 
 export default function Header() {
   return (
@@ -56,26 +56,20 @@ function Dropdown() {
   return (
     <div className="dropdown">
       <div className="select" onClick={() => setIsOpen(!isOpen)}>
-        <a href className="navbar__nav--link selected">
+        <Link to="/home" className="navbar__nav--link selected">
           Categorias <span className="caret"></span>
-        </a>
+        </Link>
       </div>
       {isOpen && (
         <ul className="dropdown__menu">
           <li className="dropdown__menu--item">
-            <a href className="dropdown__menu--link">
-              Ferramentas{" "}
-            </a>
+            <Link className="dropdown__menu--link">Ferramentas </Link>
           </li>
           <li className="dropdown__menu--item">
-            <a href className="dropdown__menu--link">
-              Equipamentos{" "}
-            </a>
+            <Link className="dropdown__menu--link">Equipamentos </Link>
           </li>
           <li className="dropdown__menu--item">
-            <a href className="dropdown__menu--link">
-              Máquinas{" "}
-            </a>
+            <Link className="dropdown__menu--link">Máquinas </Link>
           </li>
         </ul>
       )}

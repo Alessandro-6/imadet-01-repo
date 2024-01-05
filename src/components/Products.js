@@ -95,11 +95,11 @@ function Card({ name, content, id, image, price }) {
       <div className="card-top">
         <button className="btn btn-cart mb-sm">Adicionar ao carrinho</button>
         <div className="icon-group">
-          <a href className="icon-group__link">
+          <a href="true" className="icon-group__link">
             <FaShare className="icon-group__link--share" />
             <span>partilhar</span>
           </a>
-          <a href className="icon-group__link">
+          <a href="true" className="icon-group__link">
             <FaRegHeart className="icon-group__link--like" />
             <span>gosto</span>
           </a>
